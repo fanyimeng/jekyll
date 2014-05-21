@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-us">
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta name="author" content="Fanyi Meng" />
+    <title>tags | Fanyi Meng</title>
+    <link rel="shortcut icon" href="/favicon.ico">
+    <link href="/feed/" rel="alternate" title="Fanyi Meng" type="application/atom+xml" />
+    <link rel="stylesheet" href="/media/css/style.css">
+    <link rel="stylesheet" href="/media/css/highlight.css">
+    <link rel="stylesheet" href="/media/css/pygments.css">
+    <script type="text/javascript" src="/media/js/jquery-1.7.1.min.js"></script>
+  </head>
+  <script type="text/javascript">
+    function setTimeSpan(){
+    	var date = new Date();
+    	timeSpan.innerText=date.format('yyyy-MM-dd hh:mm:ss');
+    }
+    
+    Date.prototype.format = function(format)
+		{
+    var o =
+    	{
+    	    "M+" : this.getMonth()+1, //month
+    	    "d+" : this.getDate(),    //day
+    	    "h+" : this.getHours(),   //hour
+    	    "m+" : this.getMinutes(), //minute
+    	    "s+" : this.getSeconds(), //second
+    	    "q+" : Math.floor((this.getMonth()+3)/3),  //quarter
+    	    "S" : this.getMilliseconds() //millisecond
+    	}
+    	if(/(y+)/.test(format))
+    	format=format.replace(RegExp.$1,(this.getFullYear()+"").substr(4 - RegExp.$1.length));
+    	for(var k in o)
+    	if(new RegExp("("+ k +")").test(format))
+    	format = format.replace(RegExp.$1,RegExp.$1.length==1 ? o[k] : ("00"+ o[k]).substr((""+ o[k]).length));
+    	return format;
+		}
+  </script>
+  <body onLoad="setInterval(setTimeSpan,1000);">
+    <div id="container">
+      <div id="main" role="main">
+        <header>
+        <h1>tags</h1>
+        </header>
+        <nav>
+        <namefont>孟 繁一</namefont>
+        <br>
+        <namefont>Fanyi Meng</namefont>
+        <br>
+        <br>
+        <span><a title="home page" class="" href="/">Home</a></span>
+        <span><a title="categories" class="" href="/categories/">Categories</a></span>
+        <span><a title="tags" class="" href="/tags/">Tags</a></span>
+        <span><a title="links" class="" href="/links/">Links</a></span>
+        <span><a title="about" class="" href="/about/">About</a></span>
+        <!--<span><a title="guestbook" class="" href="/guestbook/">Guestbook</a></span>-->
+        <span><a title="subscribe by RSS" class="" href="/feed/">Subscribe</a></span>
+        </nav>
+        <article class="content">
+        <section class="post">
+<div id="tag_cloud">
+
+<a href="#设计" title="设计" rel="1">设计</a>
+
+<a href="#随笔" title="随笔" rel="1">随笔</a>
+
+<a href="#数码产品" title="数码产品" rel="1">数码产品</a>
+
+</div>
+
+<ul class="listing">
+
+  <li class="listing-seperator" id="设计">设计</li>
+
+  <li class="listing-item">
+  <time datetime="2014-05-21">2014-05-21</time>
+  <a href="/%E4%B8%AD%E6%96%87/2014/05/21/skeuomorph.html" title="也说拟物化">也说拟物化</a>
+  </li>
+
+
+  <li class="listing-seperator" id="随笔">随笔</li>
+
+  <li class="listing-item">
+  <time datetime="2014-05-21">2014-05-21</time>
+  <a href="/%E4%B8%AD%E6%96%87/2014/05/21/skeuomorph.html" title="也说拟物化">也说拟物化</a>
+  </li>
+
+
+  <li class="listing-seperator" id="数码产品">数码产品</li>
+
+  <li class="listing-item">
+  <time datetime="2014-05-21">2014-05-21</time>
+  <a href="/%E4%B8%AD%E6%96%87/2014/05/21/skeuomorph.html" title="也说拟物化">也说拟物化</a>
+  </li>
+
+
+</ul>
+
+<script src="/media/js/jquery.tagcloud.js" type="text/javascript" charset="utf-8"></script>
+
+<script language="javascript">
+$.fn.tagcloud.defaults = {
+    size: {start: 1, end: 1, unit: 'em'},
+      color: {start: '#f8e0e6', end: '#ff3333'}
+};
+
+$(function () {
+    $('#tag_cloud a').tagcloud();
+});
+</script>
+
+
+</section>
+
+
+
+        </article>
+      </div>
+
+    <footer>
+        <p><small>Powered by <a href="https://github.com/mojombo/jekyll">Jekyll</a> & <a href="http://pages.github.com">GitHub</a> | Template by <a href="https://github.com/webfrogs/webfrogs.github.com">webfrogs</a> | Copyright 2014 - 2014 by <a href="/about/">Fanyi Meng</a> | <span class="label label-info" id="timeSpan"></span></small></p>
+    </footer>
+
+    </div>
+
+    <script type="text/javascript">
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-34960818-1']);
+      _gaq.push(['_trackPageview']);
+      (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
+    </script>
+
+<!-- MathJax -->
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+                       tex2jax: {
+                       inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+                       processEscapes: true
+                       }
+                       });
+    </script>
+
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+                       tex2jax: {
+                       skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+                       }
+                       });
+    </script>
+
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Queue(function() {
+                      var all = MathJax.Hub.getAllJax(), i;
+                      for(i=0; i < all.length; i += 1) {
+                      all[i].SourceElement().parentNode.className += ' has-jax';
+                      }
+                      });
+    </script>
+
+<script type="text/javascript"
+    src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+    </script>
+
+  </body>
+</html>

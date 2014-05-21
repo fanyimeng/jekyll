@@ -1,0 +1,7 @@
+baseurl: 
+markdown: kramdown
+author: Fanyi Meng
+pygments: false
+safe: true
+paginate: 16
+auto: true
