@@ -3,7 +3,7 @@ layout: post
 title: 也说拟物化
 description: 也说拟物化
 categories: 
-- 中文
+- Chinese
 tags: 
 - 设计
 - 随笔
